@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Pessoais</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 500px;
+            margin: 25px auto;
+            background-color: #2D2D4E;
+            opacity: 0.9;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            padding-top: 15px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            color: white;
+        }
+
+        label {
+            padding: 5px;
+            font-size: 1.2rem;
+        }
+
+        input {
+            height: 25px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            border-style: none;
+        }
+
+        button {
+            border-style: none;
+            height: 25px;
+            margin-top: 15px;
+            background-color: rgba(82, 179, 82, 0.692);
+            color: white;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgba(183, 231, 183, 0.692);
+            transition: 500ms ease-in-out;
+        }
+
+        input::placeholder {
+            padding-left: 5px;
+        }
+
+        .resultado {
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px;
+        }
+
+        p {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Formulário</h1>
+        <form action="">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Nome">
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" placeholder="Endereço">
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" placeholder="Cidade">
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" placeholder="CEP">
+            <label for="telefone">Telefone</label>
+            <input type="number" id="telefone" placeholder="Telefone">
+            <label for="profissao">Profissão</label>
+            <input type="text" id="profissao" placeholder="Profissão">
+            <button id="enviat">Enviar</button>
+        </form>
+        
+        <div class="resultado"></div>
+    </main>
+
+    <script src="./dadosPessoais.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 500px;
+            margin: 25px auto;
+            background-color: #2D2D4E;
+            opacity: 0.9;
+            border-radius: 10px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            color: white;
+        }
+
+        label {
+            padding: 5px;
+            font-size: 1.2rem;
+        }
+
+        input {
+            height: 25px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            border-style: none;
+        }
+
+        button {
+            border-style: none;
+            height: 25px;
+            margin-top: 15px;
+            background-color: rgba(82, 179, 82, 0.692);
+            color: white;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgba(183, 231, 183, 0.692);
+            transition: 500ms ease-in-out;
+        }
+
+        .resultado {
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="">
+            <label for="numero">Número</label>
+            <input type="number" id="numero">
+            <button id="">Enviar</button>
+        </form>
+        
+        <div class="resultado"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

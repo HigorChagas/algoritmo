@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 500px;
+            margin: 25px auto;
+            background-color: #2D2D4E;
+            opacity: 0.9;
+            border-radius: 10px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        label {
+            padding: 5px;
+        }
+
+        input {
+            height: 25px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            border-style: none;
+        }
+
+        button {
+            border-style: none;
+            height: 25px;
+            margin-top: 15px;
+            background-color: rgba(82, 179, 82, 0.692);
+            color: white;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .resultado {
+            text-align: center;
+            color: #FFF;
+            font-size: 1.2rem;
+
+        }
+
+        button:hover {
+            background-color: rgba(0, 52, 0, 0.692);
+            transition: 500ms ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="">
+            <h1>Números aleatórios</h1>
+            <p>Digite um número entre 1 e 100 e veja se você acerta o número que estou pensando...</p>
+            <label for="nome">Número</label>
+            <input type="text" id="numero">
+            <button id="gerar">Gerar</button>
+        </form>
+        
+        <div class="resultado"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
