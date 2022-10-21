@@ -1,10 +1,7 @@
-const squareDigits = (num) => {
-    const arr = String(num).split('').map(num => Math.pow(num[0], 2)).join('');
-
-    return Number(arr);
+function smallEnough(a, limit) {
+    return a.every(value => value <= limit);
 }
-
-console.log(squareDigits(9119));
+console.log(smallEnough([66, 1, 117, 252], 260))
 
 // String.prototype.toJadenCase = function() {
 //         return this.split(' ').map(function(word) {
